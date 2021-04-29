@@ -23,7 +23,7 @@ body
   font-size: 1.3rem;
   display:grid;
   grid-gap: 2.5rem;
-  padding: 1rem;
+  padding: 2.5rem;
   color:hsl(0, 0%, 100%);  
   max-width: 105rem;
   grid-template-areas: 'violet violet gray last'
