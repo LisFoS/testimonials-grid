@@ -12,7 +12,7 @@ html
 }
 body
 {
-  background-color: hsl(0, 0%, 81%);
+  background-color: hsl(210, 46%, 95%);
   display: flex;
   min-height: 100vh;
   align-items: center;
@@ -22,7 +22,7 @@ body
 {
   font-size: 1.3rem;
   display:grid;
-  grid-gap: 1rem;
+  grid-gap: 2.5rem;
   padding: 1rem;
   color:hsl(0, 0%, 100%);  
   max-width: 105rem;
