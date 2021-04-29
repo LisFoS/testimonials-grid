@@ -1,0 +1,123 @@
+* *,*::before,*::after
+{
+  margin:0;
+  padding:0;
+  box-sizing: inherit;
+}
+html
+{
+  font-size: 62.5%;
+  box-sizing: border-box ;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+body
+{
+  background-color: hsl(0, 0%, 81%);
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.container
+{
+  font-size: 1.3rem;
+  display:grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  color:hsl(0, 0%, 100%);  
+  max-width: 105rem;
+  grid-template-areas: 'violet violet gray last'
+  'white blue blue last'; 
+}
+.violet 
+{
+  padding: 3rem 3.5rem 2rem 2rem;
+  background-color:hsl(263, 55%, 52%);
+  border-radius: 1rem;
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% top;
+  background-size: 11rem;
+  min-width: 5rem;
+  grid-area: violet;
+}
+
+.gray
+{
+   background-color: hsl(217, 19%, 35%);
+  padding: 3rem 3.5rem 2rem 2rem;
+  border-radius: 1rem;
+  min-width: 5rem;
+  grid-area: gray;
+}
+.blue
+{
+  background-color:hsl(219, 29%, 14%);
+  padding: 3rem 3.5rem 2rem 2rem;
+  border-radius: 1rem;
+  min-width: 5rem;
+  grid-area: blue;  
+}
+.white
+{
+  color:hsl(217, 19%, 35%);
+  background-color: hsl(0, 0%, 100%);
+  padding: 3rem 3.5rem 2rem 2rem;
+  border-radius: 1rem;
+  min-width: 5rem;
+  grid-area: white;
+}
+.last
+{
+  grid-area: last;
+}
+.image-author
+{
+  display:inline-block;
+  width: 3rem;
+  border-radius: 50%;
+}
+.author
+{
+  display: inline-block;
+  color:hsl(210, 46%, 95%);
+  margin-left: 1.5rem;
+  position: relative;
+  top: 0.4rem;
+}
+.verified
+{
+  display: block;
+  color:hsla(210, 46%, 95%,0.5);
+}
+.author-different
+{
+  color: hsl(217, 19%, 35%);
+}
+.verified-different
+{
+  display: block;
+  color:hsla(217, 19%, 35%,0.5); 
+}
+.header
+{
+  
+  margin: 1.5rem 0 1.5rem 0;
+  font-weight: 600;
+}
+.par
+{
+  
+  opacity: 0.7;
+} 
+@media screen and (max-width:42.5rem)
+{
+  
+  .container
+  {
+    display: flex;
+    flex-direction: column;
+    max-height: 75rem;
+   
+  }
+}
